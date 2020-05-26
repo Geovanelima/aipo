@@ -1,0 +1,72 @@
+//Sobrescrição de variaveis
+
+$base-color: #27293d;
+$success-text: #00f2c3;
+$info-text: #1d8cf8;
+$primary-text: #e14eca;
+$warning-text: #ff8d72;
+$danger-text: #fd5d93;
+
+.box-tabela {
+   border: solid .5px rgb(90, 80, 80);
+	border-radius: 5px;
+	color:darkslateblue;	
+	top: 70px;
+	padding-top: .5px;
+   padding-left: 5px;
+   
+	position: absolute;
+	height: 100%;
+	height: calc(100% - 80px);
+	width: calc(100% - 185px);
+	overflow: auto;
+}
+
+.box-tabela table {
+	color:rgb(84, 70, 173);
+}
+
+/* Barra rolagem da nav */
+.box-tabela::-webkit-scrollbar {
+	width: 7px;
+	height: 7px; 
+}
+/* Cor fundo da barra */
+.box-tabela::-webkit-scrollbar-track {
+	background: var(--base-color);
+}
+.box-tabela::-webkit-scrollbar-thumb {
+	background: var(--base-color);
+	// background:rgb(49, 49, 75);
+	border-radius: 5px;
+}
+.box-tabela::-webkit-scrollbar-thumb:hover {
+	background: rgb(53, 53, 87);
+} 
+
+.box-tabela table thead {
+   color:darkslategray;
+}
+
+.box-tabela table tbody {
+	height: 50px; 
+}
+
+.box-tabela table th {
+  position: sticky;
+  top: 0px;
+  padding-top: 0;
+  padding-bottom: 1px;
+  background: $base-color;
+  box-shadow: 0 1px 0 0 rgb(90, 80, 80);
+} 
+
+.box-tabela table tr:hover td {
+	background-color:rgb(167, 162, 162);
+	color:rgb(40, 33, 80);
+}
+
+/* boostrap */
+.box-tabela .table-sm td {
+	padding: .1em;
+}
